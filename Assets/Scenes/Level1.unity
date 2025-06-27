@@ -1334,10 +1334,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2343657267381111803, guid: d39c4b5247c18e545a68e8331724c703, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343657267381111803, guid: d39c4b5247c18e545a68e8331724c703, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343657267381111803, guid: d39c4b5247c18e545a68e8331724c703, type: 3}
+      propertyPath: m_AngularDamping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2464387914247948702, guid: d39c4b5247c18e545a68e8331724c703, type: 3}
+      propertyPath: m_Size.x
+      value: 0.65
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1322223698054674606, guid: d39c4b5247c18e545a68e8331724c703, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1659489407}
   m_SourcePrefab: {fileID: 100100000, guid: d39c4b5247c18e545a68e8331724c703, type: 3}
 --- !u!1001 &1471317263
 PrefabInstance:
@@ -1477,6 +1496,31 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e74ffd64b7f7844594df77c53bedfde, type: 3}
+--- !u!1 &1659489402 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1322223698054674606, guid: d39c4b5247c18e545a68e8331724c703, type: 3}
+  m_PrefabInstance: {fileID: 1386170621}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1659489407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659489402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4abb483f30d69149a0271d7731429ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runSprites:
+  - {fileID: -8540619613172979209, guid: 3c2447e0d32a8db45990774cfd3b87ff, type: 3}
+  - {fileID: 9030281449398581296, guid: 826396c43d04a4e42a30492853a79984, type: 3}
+  - {fileID: -8540619613172979209, guid: 3c2447e0d32a8db45990774cfd3b87ff, type: 3}
+  - {fileID: 4568459519408868020, guid: dfaba91fc7f3d6a4caba6321c327197e, type: 3}
+  climbSprite: {fileID: -22975975188484428, guid: 99d6f492b68196247b1c00060a9793f7, type: 3}
+  moveSpeed: 10
+  jumpStrength: 4
 --- !u!1001 &1805597432
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1601,6 +1645,10 @@ PrefabInstance:
     - target: {fileID: 4634786544085700778, guid: 5e761814cc5ecbd43810804420d5ddcf, type: 3}
       propertyPath: m_Name
       value: Platform_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4634786544085700778, guid: 5e761814cc5ecbd43810804420d5ddcf, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7112947051576911636, guid: 5e761814cc5ecbd43810804420d5ddcf, type: 3}
       propertyPath: m_Size.x
