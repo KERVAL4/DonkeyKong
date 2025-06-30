@@ -131,4 +131,17 @@ public class Player : MonoBehaviour
             }
         }
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Objective"))
+        {
+            enabled = false;
+            GameManager.Instance.LevelComplete();
+        }
+        else if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            enabled = false;
+            GameManager.Instance.LevelFailed();
+        }
+    }
 }
